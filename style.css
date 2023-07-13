@@ -1,0 +1,226 @@
+body {
+    
+    border-radius: 25px;
+    height: 70px;
+    background-image: url(download\ 4.jpg);
+    background-color: #b6e7aa;
+    border-block-style: solid;
+    border-block-color: rgb(6, 189, 31) rgb(161, 5, 101);
+  }
+h1 {
+    text-align: center;
+    animation-name: DANCING ROBOT;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  }
+  .head,
+  .left_arm,
+  .torso,
+  .right_arm,
+  .left_leg,
+  .right_leg 
+  {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    text-shadow: 2px 2px #51c55b;
+  background: lightblue; 
+  background-color: #51c55b;  
+  }
+ .head {
+    width: 200px;
+    margin: 0 auto;
+    height: 150px;
+    border-radius: 200px 200px 0 0;
+    margin-bottom: 10px;
+    position: relative;
+    rotate:360deg;
+  }
+ .eyes {
+    position: relative;
+    top: 100px;
+  }
+ .left_eye
+  {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: rgb(10, 9, 9);
+    display: inline-block;
+    position: relative;
+    margin-right: 50px;
+    transition: transform 1s ease-in-out;
+    rotate:360deg;
+  }
+  .robots:hover .left_eye{
+    transform: translate(-30px);
+    animation: movelefteye 2s infinite;
+  }
+  @keyframes movelefteye
+  {
+    0%{transform: translate(0px);}
+    25%{transform: translate(-30px);}
+    50%{transform: translate(0px);}
+    70%{transform: translate(-30px);}
+    90%{transform: translate(-80px);}
+    100%{transform: translate(0px);}
+  }
+  .right_eye {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: rgb(10, 9, 9);
+    display: inline-block;
+    position: absolute;
+    margin-right: 50px;
+    transition: transform 1s ease-in-out;
+    rotate: 360deg;
+  }
+  .robots:hover .right_eye{
+    transform: translate(-30px);
+    animation: moverighteye 2s infinite;
+  }
+  @keyframes moverighteye
+  {
+    0%{transform: translate(0px);}
+    25%{transform: translate(-30px);}
+    50%{transform: translate(0px);}
+    70%{transform: translate(-30px);}
+    90%{transform: translate(-80);}
+    100%{transform: translate(0px);}
+  }
+.left_eye {
+    margin-left: 30px;
+  }
+ .right_eye {
+    margin-left: 100px;
+  }
+ .upper_body {
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .left_arm{
+    width: 40px;
+    height: 125px;
+    border-radius: 100px;
+    margin-top: 20px;
+  }
+  .left_arm {
+    margin-right: 10px;
+  }
+  .right_arm {
+    width: 40px;
+    height: 125px;
+    border-radius: 100px;
+    margin-top: 20px;
+  }
+  .right_arm {
+    margin-left: 10px;
+  }
+ .torso{
+    width: 200px;
+    height: 200px;
+    border-radius: 0 0 50px 50px;
+    transition: border-radius 3ms;
+  }
+  
+  .lower_body {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .left_leg {
+    width: 40px;
+    height: 120px;
+    border-radius: 0 0 100px 100px;
+    display: inline-flex;
+  }
+ .left_leg {
+    margin-left: 45px;
+    position: relative;
+  }
+  .right_leg {
+    width: 40px;
+    height: 120px;
+    border-radius: 0 0 100px 100px;
+    display: inline-flex;
+  }
+.right_leg {
+    margin-left: 30px;
+    position: relative;
+  }
+.head:hover {
+    animation: movehead 2s infinite;
+  }
+.robots:hover .torso {border-radius: 40%;
+    animation: movetorso 50ms infinite;}
+.robots:hover .left_arm {animation: moveleftarm 3s infinite;}
+.robots:hover .right_arm {animation: moverightarm 3s infinite;}
+.robots:hover .left_leg {animation: moveleftleg 3s infinite;}
+.robots:hover .right_leg {animation: moverightleg 3s infinite;}
+ @keyframes movehead {
+    0% {width: 200px;}
+    25% {width: 300px;}
+     50% {width: 200px;}
+     75% {width: 300px;}
+     90%{width : 350px;}
+    100% {width: 200px;}
+  }
+ @keyframes moveleftarm {
+    0% {transform: rotate(0deg);
+      transform-origin: top center;}
+    25% {transform: rotate(90deg);
+      transform-origin: top center;}
+    50% {transform: rotate(0deg);
+      transform-origin: top center;}
+    70% {transform: rotate(90deg);
+      transform-origin: top center;}
+    90% {transform: rotate(0deg);
+        transform-origin: top center;}
+    100% {transform: rotate(90deg);
+      transform-origin: top center;}
+  }
+  
+  @keyframes moverightarm {
+    0% {transform: rotate(0deg);
+      transform-origin: top center;}
+    25% {transform: rotate(-90deg);
+      transform-origin: top center;}
+    50% {transform: rotate(0deg);
+      transform-origin: top center;}
+    70% {transform: rotate(-90deg);
+      transform-origin: top center;}
+    90% {transform: rotate(-0deg);
+        transform-origin: top center;}
+    100% {transform: rotate(-145deg);
+      transform-origin: top center;}
+  }
+  @keyframes moveleftleg {
+  0% {transform: rotate(0deg);}
+  20% {transform: rotate(30deg);}
+  40%{transform: rotate(26deg);}
+  50% {transform: rotate(20deg);}
+  70% {transform: rotate(60deg);}
+  90%{transform: rotate(45deg); }
+  100% {transform: rotate(0deg);}
+  }
+ @keyframes moverightleg {
+  0% {transform: rotate(0deg);}
+  20% {transform: rotate(-30deg);}
+  40%{transform: rotate(-26deg);}
+  50% {transform: rotate(20deg);}
+  70% {transform: rotate(-60deg);}
+  90%{transform: rotate(-45deg); }
+  100% {transform: rotate(0deg);}
+  }
+ @keyframes movetorso {
+  0%{transform: rotate(0deg);}
+  20%{transform: rotate(30deg);}
+  40%{transform: rotate(0deg);}
+  50%{transform: rotate(60deg);}
+  75%{transform: rotate(0deg);}
+  90%{transform: rotate(60deg);}
+  100%{transform: rotate(00deg);}
+  }
